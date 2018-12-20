@@ -9,13 +9,17 @@ const AppNavigator = createStackNavigator(
        initalRouteName: 'One',
         defaultNavigationOptions: {
            headerStyle: {
-               backgroundColor: '#2E9AFE'
+               backgroundColor: '#3f51b5',
+               elevation: 0,
+               shadowOpacity: 0
            },
-            headerTitleStyle: {
-               fontWeight: 'bold'
-            }
+            headerTintColor: '#fff'
         }
     }
 );
 
 export default createAppContainer(AppNavigator);
+
+
+
+

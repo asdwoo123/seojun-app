@@ -70,10 +70,10 @@ function socketOnStart(socketUrl, dispatch) {
         socket.on('C_Total', (data) => {
             dispatch(getC_Total(data));
         });
-        socket.on('uliPC_Schift_OK', (data) => {
+        socket.on('C_OK', (data) => {
             dispatch(getuliPC_Schift_OK(data));
         });
-        socket.on('uliPC_Schift_NOK', (data) => {
+        socket.on('C_NOK', (data) => {
             dispatch(getuliPC_Schift_NOK(data));
         });
     });
@@ -89,7 +89,7 @@ const initialState = {
     BalluffSignalLightB5: '0',
     BalluffSignalLightB6: '0',
     BalluffSignalLightB7: '0',
-    C_Total: 0,
+    C_Total: '0',
     uliPC_Schift_OK: '0',
     uliPC_Schift_NOK: '0'
 }
